@@ -1,0 +1,475 @@
+
+<html>
+    <head>
+        <title>
+            C++ Examples
+        </title>
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: orange;
+
+        }
+        #simple{
+            border: 5px solid red;
+            border-radius: 20px;
+            margin: 100px 18% 20px 20%;
+            height: 90%;
+            padding: 10px;
+            border-style: inset;
+            color: cornsilk;
+            background-color: rgb(253, 168, 10);
+        }
+        input{
+            width:430px ;
+            padding: 10px;
+            height: 48px;
+
+        }
+        tr{
+            height: 20px;
+            width: 50px;
+        }
+        td{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+        }
+        .carousel-inner img {
+            height: 350px;
+            width: 420px;
+        }
+        #button{
+            background-color:orange;
+            color: white;
+            font-family: monospace;
+            border-radius: 20px;
+        }
+        a{
+            font-size: 20px;
+            color: black;
+            font-family: sans-serif;
+        }
+        header{
+            font-family: sans-serif;
+            font-size: 80px;
+            color:blue ;
+        }
+        nav{
+            font-size: 40px;
+            color: slateblue;
+            font-family: monospace;
+        }
+        .sac{
+            background-image: linear-gradient(to right, orange , white);
+        }
+        button{
+            color: blueviolet;
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 60%;
+            font-family: monospace;
+            border-bottom-style: inset;
+            border-bottom-color: blue;
+            background-color: navajowhite;
+            font-size: 20px;
+            padding: 1px 20px;
+            margin: 20px 20% 20px 20%;
+            cursor: pointer;
+        }
+        pre{
+            color: white;
+        }
+        #p1, #p2, #p3, #p4, #p5, #p6 , #p7, #p8, #p9, #p10{ 
+            border: 5px solid red;
+            border-radius: 20px;
+            margin: 20px 20% 20px 20%;
+            padding: 10px;
+            border-style: inset;
+            color:green;
+            background-color: black;
+            display: none;
+        }
+        #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10{
+            color: blueviolet;
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 60%;
+            font-family: monospace;
+            border-bottom-style: inset;
+            border-bottom-color: blue;
+            background-color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 1px 20px;
+            margin: 20px 20% 20px 20%;
+            cursor: pointer;
+        }
+        footer{
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#p1").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                $("#p2").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b3").click(function(){
+                $("#p3").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b4").click(function(){
+                $("#p4").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b5").click(function(){
+                $("#p5").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b6").click(function(){
+                $("#p6").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b7").click(function(){
+                $("#p7").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b8").click(function(){
+                $("#p8").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b9").click(function(){
+                $("#p9").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#b10").click(function(){
+                $("#p10").slideToggle("slow");
+            });
+        });
+        
+    </script>
+    <body>
+        <div id=simple>
+            <table width="50%" align="center" cellspacking="10" cellpadding="10">
+                <tr>
+                    <th>
+                        <a href="home.html"><img src="./images/home.png" alt="" width="70px" height="70px"> </a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="example.html"> <img src="./images/search.png" alt=""width="70px" height="70px"></a> 
+                    </th>
+                    <th><a href="home.html"><b>Home</b> </a> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <a href="about.html"> <b>About</b> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a href="example.html"> <b>Examples</b> </a> &nbsp;  &nbsp; &nbsp; </th>
+                </tr>
+                <tr>
+                    <td class="sac"> 
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+        
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                              <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./images/img1.jpg" alt=" c1" >
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img2.png" alt="c2" >
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img3.jpg" alt="c3" >
+                              </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                    </td>
+                    <td class="main">
+                        <form action="" method="post" align="center">
+                            <header>
+                                 <b>C++</b> 
+                            </header>
+                            <br>
+                            <nav>
+                                
+                                <br> <b>Kickstart your journey through following Examples</b>
+                            </nav>
+                            <br>
+                            <br>
+                        
+                            <a href="#b1"> <input type="button" id="button" name="submitbtm"  value="Scroll Down"></a><br><br>
+                        </form> 
+                    </td>
+                     
+                </tr>
+            </table>
+        </div>
+        <div id="b1">Sample c++ Hello World Program</div>
+        <div id="p1">
+            <pre>
+                <code>
+                    //C++ "Hello, World!" Program
+                    #include <iostream>
+                    using namespace std;
+                    int main() 
+                    {
+                        cout << "Hello, World!";
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b2">C++ Program to Print Number Entered by User</div>
+        <div id="p2">
+            <pre>
+                <code>
+                    //2. C++ Program to Print Number Entered by User
+                    #include <iostream>
+                    using namespace std;
+                    int main() 
+                    {    
+                        int num1;
+                        cout    << "Enter number";
+                        cin     >> num1;
+                        cout    << "number is " << num1;    
+                        return 0;  
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b3">C++ Program to Add Two Numbers</div>
+        <div id="p3">
+            <pre>
+                <code>
+                    //C++ Program to Add Two Numbers
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num1,num2,sum;
+                    
+                        cout    << "Enter first number : ";
+                        cin     >> num1;
+                        cout    << "Enter second number : ";
+                        cin     >> num2;
+                        sum     = num1+num2;
+                        cout    << "sum is " << sum;    
+                        return 0;
+                        
+                    }  
+                </code>
+            </pre>
+        </div>
+        <div id="b4">C++ Program to Check Whether Number is Even or Odd</div>
+        <div id="p4">
+            <pre>
+                <code>
+                    //C++ Program to Check Whether Number is Even or Odd
+                    #include <iostream>
+                    using namespace std;
+                    int main() 
+                    {    
+                        int num1;
+                        cout << "Enter number (not 0 ) :";
+                        cin >> num1;
+                        if(num1%2==0)
+                        {
+                            cout << "number is even ";
+                        }
+                        else
+                        {
+                            cout << "number is odd";
+                        }     
+                        return 0;    
+                    } 
+                </code>
+            </pre>
+        </div>
+        <div id="b5">C++ Program to Multiply two Numbers</div>
+        <div id="p5">
+            <pre>
+                <code>
+                    //5. C++ Program to Multiply two Numbers
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num1,num2,product;
+                        cout    << "Enter first number : ";
+                        cin     >> num1;
+                        cout    << "Enter second number : ";
+                        cin     >> num2;
+                        product = num1*num2;
+                        cout    << "product is " << product;    
+                        return 0;  
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b6">C++ Program to Multiply two Numbers</div>
+        <div id="p6">
+            <pre>
+                <code>
+                    //6. C++ Program to Swap Two Numbers
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num1,num2,temp;
+                        cout    << "Enter first number say value in num1 : ";
+                        cin     >> num1;
+                        cout    << "Enter second number say value in num2 : ";
+                        cin     >> num2;
+                        temp    = num1;
+                        num1    = num2;
+                        num2    = temp;
+                        cout    << "after swap \n";
+                        cout    << "\n value in num1 = "  << num1 ;
+                        cout    << "\n value in num2 = "  << num2 ;
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b7">//C++ Program to Find Quotient and Remainder//</div>
+        <div id="p7">
+            <pre>
+                <code>
+                    //C++ Program to Find Quotient and Remainder//
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num1,num2,quotient,remainder;
+
+                        cout    << "Enter the dividend : ";
+                        cin     >> num1;
+                        cout    << "Enter the  divisor : ";
+                        cin     >> num2;
+                        quotient = num1/num2;
+                        remainder=num1%num2;
+                        cout    << "quotient is " << quotient; 
+                        cout    << "\n remainder is " << remainder;   
+                        return 0;
+    
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b8">C++ Program to Multiply two Numbers</div>
+        <div id="p8">
+            <pre>
+                <code>
+                    //C++ Program to Find ASCII Value of a Character
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        char character;
+
+                        cout    << "Enter the character : ";
+                        cin     >> character;
+                        cout    << "ASCii value is " << int(character);    
+                        return 0;
+    
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b9">C++ Program to Check Whether user entered Number is Even or Odd</div>
+        <div id="p9">
+            <pre>
+                <code>
+                    //C++ Program to Check Whether user entered Number is Even or Odd
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num;
+                    
+                        cout    << "Enter number (not 0 ) :";
+                        cin     >> num;
+                        if(num%2==0)
+                        {
+                            cout << "number is even ";
+                        }
+                        else{
+                            cout << "number is odd";
+                        }
+                            
+                        return 0;
+                        
+                    }
+                </code>
+            </pre>
+        </div>
+        <div id="b10">C++ Program to Multiply two Numbers</div>
+        <div id="p10">
+            <pre>
+                <code>
+                    //C++ Program to Find Largest Number Among Three Numbers
+                    #include <iostream>
+                    using namespace std;
+                    int main() {    
+                        int num1,num2,num3;
+                    
+                        cout    << "Enter first number : ";
+                        cin     >> num1;
+                        cout    << "Enter second number : ";
+                        cin     >> num2;
+                        cout    << "Enter third number : ";
+                        cin     >> num3;
+                        if(num1>num2){
+                            if(num1>num3){
+                                cout << " largest is the first number";
+                            }
+                            else{
+                                cout << " largest is the third number";
+                            }
+                        }
+                        else{
+                            if(num2>num3){
+                                cout << " largest is the second number";
+                            }
+                            else{
+                                cout << " largest is the third number";
+                            }
+                        }    
+                        return 0;
+                        
+                    }
+                </code>
+            </pre>
+        </div>
+        <button onclick="">
+            Thank You
+        </button>
+        <footer>
+            <p>
+                &copy; Anandhakrishnan
+            </p>
+        </footer>
+    </body>
+</html>

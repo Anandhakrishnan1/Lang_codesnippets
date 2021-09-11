@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            C++ Examples
+        </title>
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: orange;
+            background-image: url(./images/background.png);
+
+        }
+        #simple{
+            border: 5px solid red;
+            border-radius: 20px;
+            margin: 100px 18% 20px 20%;
+            height: 85%;
+            padding: 10px;
+            border-style: inset;
+            color: cornsilk;
+            background-color: rgb(253, 168, 10);
+        }
+        input{
+            width:430px ;
+            padding: 10px;
+            height: 48px;
+
+        }
+        tr{
+            height: 20px;
+            width: 50px;
+        }
+        td{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+        }
+        .carousel-inner img {
+            height: 350px;
+            width: 420px;
+        }
+        #button{
+            background-color:orange;
+            color: white;
+            font-family: monospace;
+            border-radius: 20px;
+        }
+        a{
+            font-size: 20px;
+            color: black;
+            font-family: sans-serif;
+        }
+        header{
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+        nav{
+            font-size: 15px;
+            color:black;
+        }
+        .sachin{
+            background-image: linear-gradient(to right, orange , white);
+        }
+        footer{
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+    </style>
+    <body>
+        <div id=simple>
+            <table width="50%" align="center" cellspacking="10" cellpadding="10">
+                <tr>
+                    <th>
+                        <a href="home.html"><img src="./images/home.png" alt="" width="70px" height="70px"> </a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="example.html"> <img src="./images/search.png" alt=""width="70px" height="70px"></a> 
+                    </th>
+                    <th><a href="home.html"><b>Home</b> </a> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <a href="about.html"> <b>About</b> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a href="example.html"> <b>Examples</b> </a> &nbsp;  &nbsp; &nbsp; </th>
+                </tr>
+                <tr>
+                    <td class="sachin"> 
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+        
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                              <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./images/img1.jpg" alt="Los Angeles" >
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img2.png" alt="Chicago" >
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img3.jpg" alt="New York" >
+                              </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                    </td>
+                    <td class="main">
+                        <form action="" method="post" align="center">
+                            <header>
+                                 <b>C++</b> 
+                            </header>
+                            <br>
+                            <nav>
+                                C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the 
+                                C programming language, or "C with Classes". The language has expanded significantly over time, 
+                                and modern C++ now has object-oriented, generic, and functional features in addition to facilities 
+                                for low-level memory manipulation. It is almost always implemented as a compiled language, and many 
+                                vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, 
+                                and IBM, so it is available on many platforms.
+                                <br> <a href="https://en.wikipedia.org/wiki/C%2B%2B"><b>Read More</b></a>
+                            </nav>
+                            <br>
+                            <br>
+                        
+                            <a href="example.html"> <input type="button" id="button" name="submitbtm" value="Let's Roll"></a><br><br>
+                        </form> 
+                    </td>
+                     
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <p>
+                &copy; Anandhakrishnan
+            </p>
+        </footer>
+    </body>
+</html>
